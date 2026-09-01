@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@font-face{
+    font-family: "Space Grotesk";
+    src: url("/fonts/SpaceGrotesk-VariableFont_Bold.ttf") format("ttf");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: "Space Grotesk";
+    src: url("../assets/fonts/SpaceGrotesk-VariableFont_Light.ttf") format("ttf");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: "Space Grotesk";
+    src: url("../assets/fonts/SpaceGrotesk-VariableFont_Light.ttf") format("ttf");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face{
+    font-family: "Space Grotesk";
+    src: url("../assets/fonts/SpaceGrotesk-VariableFont_Light.ttf") format("ttf");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: "Space Grotesk";
+    src: url("../assets/fonts/SpaceGrotesk-VariableFont_Light.ttf") format("ttf");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root{
+    --canvas: #f1f2f8;
+    --surface: #ffffff;
+    --ink: #111a22;
+    --muted: #5c6a74;
+    --line: #dcdfdd;
+    --accent: #3b82f6;
+    --accent-soft: #dfeae5;
+    color-scheme: light;
+}
+
+.dark{
+
+    --canvas: #0c1117;
+    --surface: #131a21;
+    --ink: #e8edeb;
+    --muted: #8fa0a8;
+    --line: #222c34;
+    --accent: #4fd1a5;
+    --accent-soft: #15302a;
+    color-scheme: dark;
+
+}
+
+@theme inline{
+    --color-canvas: var(--canvas);
+    --color-surface: var(--surface);
+    --color-ink: var(--ink);
+    --color-muted: var(--muted);
+    --color-line: var(--line);
+    --color-accent: var(--accent);
+    --color-accent-soft: var(--accent-soft);
+
+    --font-display: "Space Grotesk", ui-sans-serif, sans-serif;
+    --font-sans: "Inter" , ui-sans-serif, sans-serif;
+}
