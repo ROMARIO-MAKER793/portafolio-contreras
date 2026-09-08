@@ -2,7 +2,7 @@
 import '../styles/global.css' 
 import {site} from '../data/site.js';
 
-const { title = '${site.nombre} - ${site.role}', description = site.description} = Astro.props;
+const { title = '${site.name} - ${site.role}', description = site.description} = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site).toString();
 ---
 
