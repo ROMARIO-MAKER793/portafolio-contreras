@@ -26,13 +26,27 @@ import Icon from './Icon.astro';
              <div>
                 <a href="#proyecto" class=" inline-flex items-center gap-2 rounded-full bg-ink 
                 px-5 py-3 text-sm font-medium text-canvas transition duration-300 hover:-translate-y-0.5 hover:bg-accent"
-                >Ver proyectos</a>
-                <Icon name="arrow-right" class="h-4 w-4 transition-transform duration-300 group-" />
+                >Ver proyectos
+            <Icon name="arrow-right" class="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+        </a>
+                
                 <a href="#contacto" class="inline-flex  items-center gap-2 rounded-full bg-ink 
                 px-5 py-3 text-sm font-medium text-canvas transition duration-300 
-                hover:-translate-y-0.5 hover:bg-accent">Escríbeme</a>
+                hover:-translate-y-0.5 hover:bg-accent">
+                <Icon name="mail" class="h-4 w-4" /> Escríbeme</a>
              </div>
         </div>
     </div>
+
+    <aside>
+        <dl class="divide-y divide-inline rounde-2xl border border-line bg-surface/70 p-6 backdrop:blur">
+            <div class="flex items-start justify-between gap-6 pb-4">
+                <dt class=" text-sm text-muted">Dónde</dt>
+                <dd class="flex items-center gap-2 text-right text-sm font-medium">
+                    <Icon name="pin" class="h-4 w-4 text-accent" />
+                    {site.location}</dd>
+            </div>
+        </dl>
+    </aside>
         
 </section>
