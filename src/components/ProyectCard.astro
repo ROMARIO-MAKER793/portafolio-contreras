@@ -1,0 +1,16 @@
+---
+ import Icon from "./Icon.astro";
+
+ const {proyect , delay = 0} = Astro.props;
+ const { from, to} = proyect.cover;
+---
+
+<a href="{`/proyectos/${proyect.slug}`}">
+    <div>
+        <div></div>
+        <span>
+            {proyect.title}
+        </span>
+    </div>
+
+</a>

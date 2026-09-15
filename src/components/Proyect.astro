@@ -1,0 +1,28 @@
+---
+import Section from "./Section.astro";
+import { ProyectCard } from "./ProyectCard.astro";
+import Icon from "./Icon.astro";
+import { featuredProyects} from "../data/proyect";
+---
+
+<Section>
+    <div>
+        {
+            featuredProyects.map((proyect,index) =>(
+                <ProyectCard proyect={proyect} delay={index * 120}/>
+            ))
+        }
+    </div>
+
+    <a href="/proyectos"
+    class="reveal group mt-8 inline-flex items-center gap-2 text-sm font-medium transition hover:text-accent"
+    style="--delay:160ms"
+    > Ver todos los proyectos
+    <Icon 
+        name= "arrow-right"
+        class="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
+    />
+    
+    </a>
+
+</Section>
