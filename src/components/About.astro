@@ -1,0 +1,39 @@
+---
+import { Section } from "./Section.astro";
+import {stack, facts} from "../data/experience.js";
+---
+
+<Section 
+    id = "sobre-mi"
+    title = "Sobre-mi"
+    lead = "Soy un desarrollador web con experiencia en la creacion de aplicaciones y sitios web."
+
+>
+    <div class="reveal space-y-5 text-base leading-relaxed text-muted">
+        <p>Empecé maquetando sitios para clientes pequeños y terminé liderando el frontend
+            de un producto de pagos. En el camino aprendí que la parte dificíl casi nunca es escribir
+            código, sino entender el problema y comunicarla de manera efectiva.
+        </p>
+
+        <p>Me interesan los proyectos donde el rendimiento importa de verdad, conexiones lentas, 
+            dispositivos antiguos, usuarios con poca paciencia.
+        </p>
+
+        <p>Fuera del trabajo doy mentorías a personas que están entrando al backend y escribo notas técnnicas
+            sobre las nuevas tecnologías.
+        </p>
+
+    </div>
+
+    <div class="reveal mt-10 grid gap-6 border-y border-line py-6 sm:grid-cols-3"
+    style="--delay: 100ms">
+        {
+            facts.map((fact) => {
+                <div>
+                    <dt class="font-display text-2xl font-bold">{fact.value}</dt>
+                    <dd class="mt-1 text-sm text-muted">{fact.label}</dd>
+                </div>
+            })
+        }
+    </div>
+</Section>  
